@@ -1,8 +1,10 @@
 <template>
 	<div class="app-slider">
-		<div class="app-slider__logo" @click="toHome">
+		<div class="app-slider__logo">
 			<img src="/logo.png" />
-			<span v-if="!app.isFold || browser.isMini">{{ app.info.name }}</span>
+			<span v-if="!app.isFold || browser.isMini">{{
+				app.info.name
+			}}</span>
 		</div>
 
 		<div class="app-slider__container">
@@ -18,10 +20,6 @@ import BMenu from "./bmenu";
 
 const { browser } = useBrowser();
 const { app } = useBase();
-
-function toHome() {
-	location.href = "https://cool-js.com";
-}
 </script>
 
 <style lang="scss">
@@ -38,14 +36,14 @@ function toHome() {
 		cursor: pointer;
 
 		img {
-			height: 30px;
-			width: 30px;
+			height: 24px;
+			width: 24px;
 		}
 
 		span {
 			color: #fff;
 			font-weight: bold;
-			font-size: 26px;
+			font-size: 16px;
 			margin-left: 10px;
 			white-space: nowrap;
 		}

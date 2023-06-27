@@ -1,6 +1,6 @@
 <template>
 	<quick v-if="isDev" />
-	<el-button :icon="MagicStick" @click="toCode">Ai 极速编码</el-button>
+	<el-button :icon="MagicStick" @click="toCode">Ai 数据大屏</el-button>
 </template>
 
 <script lang="ts" name="auto-menu" setup>

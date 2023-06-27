@@ -11,7 +11,7 @@
 			@click="router.push('/')"
 		>
 			<el-icon><home-filled /></el-icon>
-			<span>首页</span>
+			<span>监管平台</span>
 		</div>
 
 		<el-scrollbar :ref="setRefs('scroller')" class="app-process__scroller">
@@ -48,7 +48,7 @@ const { process } = useBase();
 
 // 跳转
 function toPath() {
-	const d = process.list.find((e) => e.active);
+	const d = process.list.find(e => e.active);
 
 	if (!d) {
 		const next = last(process.list);
@@ -60,7 +60,7 @@ function toPath() {
 function scrollTo(left: number) {
 	refs.scroller.scrollTo({
 		left,
-		behavior: "smooth"
+		behavior: "smooth",
 	});
 }
 
@@ -89,25 +89,29 @@ function onDel(index: number) {
 function openCM(e: any, item: Process.Item) {
 	ContextMenu.open(e, {
 		hover: {
-			target: "app-process__item"
+			target: "app-process__item",
 		},
 		list: [
 			{
 				label: "关闭当前",
 				hidden: item.fullPath !== route.path,
 				callback(done) {
-					onDel(process.list.findIndex((e) => e.fullPath == item.fullPath));
+					onDel(
+						process.list.findIndex(e => e.fullPath == item.fullPath)
+					);
 					done();
 					toPath();
-				}
+				},
 			},
 			{
 				label: "关闭其他",
 				callback(done) {
-					process.set(process.list.filter((e) => e.fullPath == item.fullPath));
+					process.set(
+						process.list.filter(e => e.fullPath == item.fullPath)
+					);
 					done();
 					toPath();
-				}
+				},
 			},
 			{
 				label: "关闭所有",
@@ -115,16 +119,16 @@ function openCM(e: any, item: Process.Item) {
 					process.clear();
 					done();
 					toPath();
-				}
-			}
-		]
+				},
+			},
+		],
 	});
 }
 
 watch(
 	() => route.path,
 	function (val) {
-		adScroll(process.list.findIndex((e) => e.fullPath === val) || 0);
+		adScroll(process.list.findIndex(e => e.fullPath === val) || 0);
 	}
 );
 </script>

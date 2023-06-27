@@ -1,11 +1,11 @@
 <template>
 	<li v-if="!browser.isMini">
-		<el-badge is-dot>
-			<div class="btn" @click="toCode">
-				<span>Ai</span>
-				<span>极速编码</span>
-			</div>
-		</el-badge>
+		<div class="btn" @click="toCode">
+			<span>
+				<i class="iconfont icon-diannao"></i>
+			</span>
+			<span>数据大屏</span>
+		</div>
 	</li>
 </template>
 
@@ -15,7 +15,7 @@ import { useCool } from "/@/cool";
 const { router, browser } = useCool();
 
 function toCode() {
-	router.push("/magic/ai-code");
+	router.push("/data/screen");
 }
 </script>
 

@@ -5,7 +5,7 @@
 		<div
 			class="app-topbar__collapse"
 			:class="{
-				unfold: !app.isFold
+				unfold: !app.isFold,
 			}"
 			@click="app.fold()"
 		>
@@ -20,10 +20,6 @@
 		<!-- 工具栏 -->
 		<ul class="app-topbar__tools">
 			<auto-menu-btn />
-
-			<li>
-				<cl-chat />
-			</li>
 
 			<li>
 				<cl-theme />

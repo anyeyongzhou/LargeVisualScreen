@@ -1,0 +1,58 @@
+{
+  "id": "4104135",
+  "name": "农科院可视化大屏",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "13116570",
+      "name": "拖拉机",
+      "font_class": "tlj-grey",
+      "unicode": "e7ee",
+      "unicode_decimal": 59374
+    },
+    {
+      "icon_id": "36036505",
+      "name": "拖拉机-copy",
+      "font_class": "tlj-red-copy",
+      "unicode": "e7ef",
+      "unicode_decimal": 59375
+    },
+    {
+      "icon_id": "4765881",
+      "name": "dashboard",
+      "font_class": "dashboard",
+      "unicode": "e78b",
+      "unicode_decimal": 59275
+    },
+    {
+      "icon_id": "35816286",
+      "name": "图标_基药-小三角线性-copy",
+      "font_class": "tubiao_jiyao-xiaosanjiaoxianxing-copy",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "8017123",
+      "name": "图标_基药-小三角",
+      "font_class": "tubiao_jiyao-xiaosanjiao",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "8017129",
+      "name": "图标_基药-小三角线性",
+      "font_class": "tubiao_jiyao-xiaosanjiaoxianxing",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "6850406",
+      "name": "电脑",
+      "font_class": "diannao",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

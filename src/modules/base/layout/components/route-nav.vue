@@ -6,9 +6,11 @@
 
 		<template v-else>
 			<el-breadcrumb>
-				<el-breadcrumb-item v-for="(item, index) in list" :key="index">{{
-					item.meta?.label || item.name
-				}}</el-breadcrumb-item>
+				<el-breadcrumb-item
+					v-for="(item, index) in list"
+					:key="index"
+					>{{ item.meta?.label || item.name }}</el-breadcrumb-item
+				>
 			</el-breadcrumb>
 		</template>
 	</div>
