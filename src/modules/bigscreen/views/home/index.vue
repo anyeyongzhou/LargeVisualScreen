@@ -478,7 +478,7 @@ const loadAll = () => {
 	}
 	// var config = {
 	// 	method: "get",
-	// 	url: "/api/admin/terminal/info/search?keyword=" + state.value,
+	// 	url:
 	// };
 
 	// axios(config).then(function (response) {
