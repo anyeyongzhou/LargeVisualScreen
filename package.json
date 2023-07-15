@@ -34,6 +34,7 @@
 		"socket.io-client": "^4.5.1",
 		"store": "^2.0.12",
 		"ts-wps": "^1.0.5",
+		"v-scale-screen": "^2.2.0",
 		"vue": "^3.2.47",
 		"vue-echarts": "^6.2.3",
 		"vue-router": "^4.1.6",
