@@ -476,10 +476,6 @@ const loadAll = () => {
 	if (state.value === "") {
 		return [];
 	}
-	// var config = {
-	// 	method: "get",
-	// 	url: "/api/admin/terminal/info/search?keyword=" + state.value,
-	// };
 
 	// axios(config).then(function (response) {
 	// 	//服务器有返回
