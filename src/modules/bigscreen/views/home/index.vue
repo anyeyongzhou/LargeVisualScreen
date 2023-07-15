@@ -38,7 +38,7 @@
 				<div class="fullscreen-control-in" ref="fullscreen"></div>
 			</div>
 			<!--比例尺放大缩小控件-->
-			<!--右侧组件-->
+			<!--右侧组件  -->
 			<el-scrollbar class="absolute top-3 right-3 w-310px">
 				<!--右侧组件4个-->
 				<div class="w-full mb-2 p-0 text-0 leading-0">
