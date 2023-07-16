@@ -13,6 +13,7 @@ FROM nginx
 RUN mkdir /app
 COPY --from=0 /build/dist /app
 COPY --from=0 /build/nginx.conf /etc/nginx/nginx.conf
-#COPY --from=0 /build/dist /usr/share/html
-#COPY --from=0 /build/nginx.conf /etc/nginx/nginx.conf
+
+# COPY --from=0 /build/dist /usr/share/html
+# COPY --from=0 /build/nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80

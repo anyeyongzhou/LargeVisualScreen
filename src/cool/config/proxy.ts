@@ -10,7 +10,7 @@ export const proxy = {
 		changeOrigin: true,
 		rewrite: (path: string) => path.replace(/^\/prod/, "/api"),
 	},
-	// 将以 /api 开头的请求代理到目标地址
+	//  将以 /api 开头的请求代理到目标地址
 	"/api": {
 		target: "https://udsp.cpsmart.cn", // 目标地址
 		changeOrigin: true, // 开启跨域
