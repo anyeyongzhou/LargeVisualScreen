@@ -6,7 +6,10 @@
 		"build": "vite build",
 		"serve": "vite preview",
 		"lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
-		"lint:eslint": "eslint \"{src}/**/*.{vue,ts,tsx}\" --fix"
+		"lint:eslint": "eslint \"{src}/**/*.{vue,ts,tsx}\" --fix",
+		"docker:test": "docker build --platform linux/amd64 -t ntfscap-front:v0.38-t -f Dockerfile .",
+		"docker:prod": "docker build --platform linux/amd64 -t ntfscap-front:v0.39_ts -f Dockerfile .",
+		"docker": "docker build -t ntfscap-front:v0.36 -f Dockerfile ."
 	},
 	"dependencies": {
 		"@amap/amap-jsapi-loader": "^1.0.1",
