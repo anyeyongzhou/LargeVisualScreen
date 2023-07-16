@@ -5,12 +5,13 @@ WORKDIR /build
 # 设置npm镜像
 RUN npm config set registry https://registry.npm.taobao.org
 COPY package.json /build/package.json
-RUN yarn
+RUN npm install
 COPY ./ /build
 RUN npm run build
 
 FROM nginx
-RUN mkdir /app
-COPY --from=0 /build/dist /app
-COPY --from=0 /build/nginx.conf /etc/nginx/nginx.conf
+# RUN mkdir /app
+# COPY --from=0 /build/dist /app
+# COPY --from=0 /build/nginx.conf /etc/nginx/nginx.conf
+COPY --from=0 /build/dist /usr/share/html
 EXPOSE 80
