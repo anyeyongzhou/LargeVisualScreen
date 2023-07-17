@@ -11,7 +11,8 @@ RUN npm run build
 
 FROM nginx
 RUN mkdir /app
-COPY --from=0 /build/dist /app
+# COPY --from=0 /build/dist /app
+COPY --from=0 /build/dist /usr/share/nginx/html
 COPY --from=0 /build/nginx.conf /etc/nginx/nginx.conf
 
 # COPY --from=0 /build/dist /usr/share/nginx/html
